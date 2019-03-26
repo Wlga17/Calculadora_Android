@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/txt_visor"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:paddingRight="5dp"
+        android:background="@color/corFundo"
+        android:clickable="false"
+        android:enabled="false"
+        android:focusable="false"
+        android:gravity="right|bottom"
+        android:inputType="numberDecimal"
+        android:text="0"
+        android:textColor="@color/corTextoNumero"
+        android:textSize="60dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/bt_limpar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/limpar"
+                android:background="@color/corBtnOperadores"
+                android:textColor="@color/corTextoOperadores"
+                android:textSize="20dp"/>
+
+            <Button
+                android:id="@+id/bt_maisMenos"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/maisMenos"
+                android:background="@color/corBtnOperadores"
+                android:textColor="@color/corTextoOperadores"
+                android:textSize="20dp"/>
+
+            <Button
+                android:id="@+id/bt_porcent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/porcento"
+                android:background="@color/corBtnOperadores"
+                android:textColor="@color/corTextoOperadores"
+                android:textSize="20dp"/>
+
+            <Button
+                android:id="@+id/bt_divi"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/divisao"
+                android:background="@color/corBtnOperadores"
+                android:textColor="@color/corTextoOperadores"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/bt_7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/sete"
+                android:background="@color/corBtnNumeros"
+                android:textColor="@color/corTextoNumero"
+                android:textSize="20dp"/>
+
+            <Button
+                android:id="@+id/bt_8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/oito"
+                android:background="@color/corBtnNumeros"
+                android:textColor="@color/corTextoNumero"
+                android:textSize="20dp"/>
+
+            <Button
+                android:id="@+id/bt_9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/nove"
+                android:background="@color/corBtnNumeros"
+                android:textColor="@color/corTextoNumero"
+                android:textSize="20dp"/>
+
+            <Button
+                android:id="@+id/bt_multi"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/multi"
+                android:background="@color/corBtnOperadores"
+                android:textColor="@color/corTextoOperadores"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/bt_4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/quatro"
+                android:background="@color/corBtnNumeros"
+                android:textColor="@color/corTextoNumero"
+                android:textSize="20dp"/>
+
+            <Button
+                android:id="@+id/bt_5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/cinco"
+                android:background="@color/corBtnNumeros"
+                android:textColor="@color/corTextoNumero"
+                android:textSize="20dp"/>
+
+            <Button
+                android:id="@+id/bt_6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/seis"
+                android:background="@color/corBtnNumeros"
+                android:textColor="@color/corTextoNumero"
+                android:textSize="20dp"/>
+
+            <Button
+                android:id="@+id/bt_subt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/subt"
+                android:background="@color/corBtnOperadores"
+                android:textColor="@color/corTextoOperadores"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/bt_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/um"
+                android:background="@color/corBtnNumeros"
+                android:textColor="@color/corTextoNumero"
+                android:textSize="20dp"/>
+
+            <Button
+                android:id="@+id/bt_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/dois"
+                android:background="@color/corBtnNumeros"
+                android:textColor="@color/corTextoNumero"
+                android:textSize="20dp"/>
+
+            <Button
+                android:id="@+id/bt_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/tres"
+                android:background="@color/corBtnNumeros"
+                android:textColor="@color/corTextoNumero"
+                android:textSize="20dp"/>
+
+            <Button
+                android:id="@+id/bt_soma"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/soma"
+                android:background="@color/corBtnOperadores"
+                android:textColor="@color/corTextoOperadores"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/bt_0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="@string/zero"
+                android:background="@color/corBtnNumeros"
+                android:textColor="@color/corTextoNumero"
+                android:textSize="20dp"/>
+
+            <Button
+                android:id="@+id/bt_ponto"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/ponto"
+                android:background="@color/corBtnNumeros"
+                android:textColor="@color/corTextoNumero"
+                android:textSize="20dp"/>
+
+            <Button
+                android:id="@+id/bt_igual"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/igual"
+                android:background="@color/corBtnIgual"
+                android:textColor="@color/corTextoOperadores"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
