@@ -144,10 +144,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void porcento() {
-        double result;
         String textVisor = txt_visor.getText().toString().trim();
-        result = Double.parseDouble(textVisor) / 100;
-        txt_visor.setText(String.valueOf(result));
+        double resultado = Double.parseDouble(textVisor) / 100;
+        if (resultado == Math.rint(resultado)) {
+            int valorInt = (int) resultado;
+            txt_visor.setText(String.valueOf(valorInt));
+        } else {
+            txt_visor.setText(String.valueOf(resultado));
+        }
     }
 
     private void ponto(String ponto){
@@ -168,9 +172,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void maisOUmenos(){
-//        tamanhoTexto = textVisor.length();
-//        aux = textVisor.substring(tamanhoTexto-1, tamanhoTexto);
-//        String txt = textVisor.substring(0, tamanhoTexto-2);
         String textVisor = txt_visor.getText().toString();
         double valor = Double.parseDouble(textVisor) * (-1);
 
